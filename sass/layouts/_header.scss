@@ -1,14 +1,19 @@
 .header {
 	border-bottom: 1px solid #ececec;
 }
-.header__container,
+
 .header__nav {
 	display: flex;
+	justify-content: space-between;
 	align-items: center;
+	min-height: 60px;
 }
 .header__logo {
-	margin-right: 93px;
+	margin-right: 83px;
 	color: var(--accent-color);
+	@media screen and(min-width:1200px) {
+		margin-right: 93px;
+	}
 }
 .header__logo--accent {
 	color: black;
@@ -23,11 +28,29 @@
 	line-height: 1.17;
 	letter-spacing: 0.03em;
 }
+.header__menu {
+	@media screen and(min-width:768px) {
+		display: flex;
+		justify-content: space-between;
+		flex-grow: 1;
+	}
+}
 .header__list {
-	display: flex;
+	@media screen and(min-width:480px) {
+		margin-bottom: 60px;
+	}
+	@media screen and(min-width:768px) {
+		display: flex;
+		margin-left: 81px;
+	}
 }
 .header__item:not(:last-child) {
-	margin-right: 50px;
+	@media screen and(min-width:480px) {
+		margin-bottom: 40px;
+	}
+	@media screen and(min-width:768px) {
+		margin-right: 50px;
+	}
 }
 .header__link {
 	color: var(--title-color);
@@ -36,8 +59,8 @@
 	line-height: 1.14;
 	letter-spacing: 0.02em;
 	padding-top: 32px;
-	padding-bottom: 32px;
-	display: block;
+	padding-bottom: 8px;
+	display: inline-flex;
 	position: relative;
 	transition-property: color;
 	transition-duration: var(--transition-duration);
@@ -45,6 +68,9 @@
 	&:hover,
 	&:focus {
 		color: var(--accent-color);
+	}
+	@media screen and(min-width:768px) {
+		padding: 32px 0;
 	}
 }
 .current {
@@ -60,12 +86,34 @@
 		background-color: var(--accent-color);
 	}
 }
-.header__list--start {
-	margin-left: auto;
+.header__address {
+	@media screen and(min-width:768px) and(max-width:1199px) {
+		font-size: 14px;
+	}
+	@media screen and(min-width:1200px) {
+		display: inline-flex;
+		align-items: center;
+	}
 }
-.header__contacts:not(:last-child) {
-	margin-right: 30px;
+.header__contacts {
+	&:first-child {
+		@media screen and(min-width:480px) {
+			margin-bottom: 16px;
+		}
+		@media screen and(min-width:768px) and(max-width:1199px) {
+			margin-bottom: 10px;
+		}
+		@media screen and(min-width:1200px) {
+			margin-right: 30px;
+		}
+	}
 }
+// .header__list--start {
+// 	margin-left: auto;
+// }
+// .header__contacts:not(:last-child) {
+// 	margin-right: 30px;
+// }
 .header__mail,
 .header__tel {
 	color: var(--text-color);
@@ -73,7 +121,7 @@
 	font-size: 14px;
 	line-height: 1.14;
 	letter-spacing: 0.02em;
-	display: flex;
+	display: inline-flex;
 	align-items: center;
 	transition-property: color;
 	transition-duration: var(--transition-duration);
@@ -81,6 +129,9 @@
 	&:hover,
 	&:focus {
 		color: var(--accent-color);
+	}
+	@media screen and(min-width:1200px) {
+		padding: 32 0px;
 	}
 }
 .header__mail--icon,
