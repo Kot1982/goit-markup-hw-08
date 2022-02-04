@@ -777,8 +777,20 @@ body {
 
 .portfolio__list {
   display: flex;
-  margin-bottom: 50px;
-  justify-content: center;
+  flex-wrap: wrap;
+  margin-bottom: 40px;
+}
+
+@media screen and (min-width: 768px) {
+  .portfolio__list {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+  }
+}
+
+.portfolio__item {
+  margin-bottom: 15px;
 }
 
 .portfolio__item:not(:last-child) {
@@ -809,16 +821,37 @@ body {
 }
 
 .examples__list {
-  display: flex;
-  flex-wrap: wrap;
-  margin-left: -30px;
   margin-top: -30px;
 }
 
+@media screen and (min-width: 768px) {
+  .examples__list {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -30px;
+  }
+}
+
 .examples__list > .examples__item {
-  flex-basis: calc((100% - 90px) / 3);
-  margin-left: 30px;
+  width: 100%;
   margin-top: 30px;
+}
+
+@media screen and (min-width: 768px) {
+  .examples__list > .examples__item {
+    width: calc(100% / 2 - 30px);
+    margin-left: 30px;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .examples__list > .examples__item {
+    width: calc((100% - 90px) / 3);
+    margin-left: 30px;
+  }
 }
 
 .examples__link:hover, .examples__link:focus {
@@ -862,6 +895,7 @@ body {
 }
 
 .examples__container {
+  flex-grow: 1;
   padding: 20px 24px;
   border-right: 1px solid #eeeeee;
   border-bottom: 1px solid #eeeeee;
