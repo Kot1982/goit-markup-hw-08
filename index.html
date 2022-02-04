@@ -22,6 +22,15 @@
         <div class="container header__container">
             <nav class="header__nav">
                 <a class="link header__logo" href="">Web<span class="header__logo--accent">Studio</span></a>
+                <button type="button" class="menu-toggle js-open-menu" aria-expanded="false" aria-controls="mobile-menu">_</button>
+                <div class="menu-container js-menu-container" id="mobile-menu">
+                    <button type="button" class="menu-toggle js-close-menu">...</button>
+                    <ul class="mobile-menu">
+                        <li><a href="" class="link">???</a></li>
+                        <li><a href="" class="link">???</a></li>
+                        <li><a href="" class="link">???</a></li>
+                    </ul>
+                </div>
                 <ul class="list header__list">
                     <li class="header__item"><a class="link header__link current" href="">Студия</a></li>
                     <li class="header__item"><a class="link header__link" href="./portfolio.html">Портфолио</a></li>
@@ -432,5 +441,6 @@
     </div>
 
     <script src="./js/modal.js"></script>
+    <script src="./js/mobile-menu.js"></script>
 </body>
 </html>

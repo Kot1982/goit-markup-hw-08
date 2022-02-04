@@ -5,15 +5,19 @@
 .header__nav {
 	display: flex;
 	align-items: center;
+	justify-content: space-between;
 	@media screen and (max-width: 767px) {
 		height: 60px;
 	}
 }
+
 .header__logo {
-	margin-right: 88px;
 	color: var(--accent-color);
 	@media screen and (min-width: 1200px) {
 		margin-right: 93px;
+	}
+	@media screen and (min-width: 768px) {
+		margin-right: 88px;
 	}
 }
 .header__logo--accent {
@@ -128,4 +132,39 @@
 	&:focus .header__tel--icon {
 		fill: var(--accent-color);
 	}
+}
+
+.menu-container {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100vw;
+	height: 100vh;
+	padding-left: 42px;
+	padding-top: 48px;
+	padding-bottom: 48px;
+	z-index: 10;
+	background-color: gray;
+	transform: translateX(100%);
+	transition: transform 250ms ease-in-out;
+}
+.menu-container.is-open {
+	transform: translateX(0);
+}
+
+.menu-toggle {
+	@media screen and (min-width: 768px) {
+		display: none;
+	}
+}
+
+.js-open-menu {
+	display: flex;
+	margin-left: auto;
+}
+.js-close-menu {
+	position: absolute;
+	bottom: 100%;
+	left: 100%;
+	transform: translate(-130%, 130%);
 }
