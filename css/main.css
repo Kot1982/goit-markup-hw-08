@@ -292,6 +292,31 @@ body {
   transform: translate(-130%, 130%);
 }
 
+.open-mob-menu {
+  width: 40px;
+  height: 40px;
+  background-color: transparent;
+  border: transparent;
+  position: absolute;
+  right: 15px;
+  top: 10px;
+  cursor: pointer;
+}
+
+@media screen and (min-width: 768px) {
+  .open-mob-menu {
+    display: none;
+  }
+}
+
+.open-mob-menu__svg {
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.open-mob-menu__svg:hover, .open-mob-menu__svg:focus {
+  fill: var(--accent-color);
+}
+
 .hero {
   max-width: 1600px;
   margin-left: auto;
