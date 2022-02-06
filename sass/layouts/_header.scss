@@ -154,6 +154,11 @@
 		display: none;
 	}
 }
+
+.mobile-menu.is-hidden {
+	left: 100%;
+}
+
 .menu-close-btn {
 	display: block;
 	margin-left: auto;
