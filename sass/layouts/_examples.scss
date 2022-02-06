@@ -38,10 +38,24 @@
 		opacity: 1;
 	}
 }
-
 .examples__item {
 	&:hover .overlay__container {
 		transform: translateY(0);
+	}
+}
+@media screen and (min-width: 480px) {
+	.examples__item {
+		width: 450px;
+	}
+}
+@media screen and (min-width: 768px) {
+	.examples__item {
+		width: 354px;
+	}
+}
+@media screen and (min-width: 1200px) {
+	.examples__item {
+		width: 270px;
 	}
 }
 .overlay__container {

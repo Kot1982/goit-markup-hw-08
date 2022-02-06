@@ -622,6 +622,24 @@ body {
   margin-bottom: 30px;
 }
 
+@media screen and (min-width: 480px) {
+  .team__item {
+    width: 450px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .team__item {
+    width: 354px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .team__item {
+    width: 270px;
+  }
+}
+
 .person {
   background-color: #ffffff;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -1064,6 +1082,12 @@ body {
   margin-bottom: 15px;
 }
 
+@media screen and (max-width: 767px) {
+  .portfolio__item:nth-last-child(-n + 2) {
+    margin-bottom: 40px;
+  }
+}
+
 .portfolio__item:not(:last-child) {
   margin-right: 8px;
 }
@@ -1144,6 +1168,24 @@ body {
 
 .examples__item:hover .overlay__container {
   transform: translateY(0);
+}
+
+@media screen and (min-width: 480px) {
+  .examples__item {
+    width: 450px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .examples__item {
+    width: 354px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .examples__item {
+    width: 270px;
+  }
 }
 
 .overlay__container {
