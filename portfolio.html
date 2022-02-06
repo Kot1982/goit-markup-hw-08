@@ -20,8 +20,13 @@
     <header class="header">
         <!--Навигация на другие страницы-->
         <div class="container header__container">
+            <a class="link header__logo" href="">Web<span class="header__logo--accent">Studio</span></a>
+            <button type="button" class="menu-open-btn" data-menu-open>
+                <svg class="menu-open-btn__svg" width="24" height="16">
+                    <use href="./images/icons.svg#icon-menu-mob"></use>
+                </svg>
+            </button>
             <nav class="header__nav">
-                <a class="link header__logo" href="">Web<span class="header__logo--accent">Studio</span></a>
                 <ul class="list header__list">
                     <li class="header__item"><a class="link header__link" href="./index.html">Студия</a></li>
                     <li class="header__item"><a class="link header__link current" href="">Портфолио</a></li>
@@ -44,6 +49,55 @@
                         </svg>
                         +38 096 111 11 11</a></li>
             </ul>
+
+            <div class="mobile-menu is-hidden" data-menu>
+                <div class="mobile-container">
+                    <div class="mobile-top">
+                        <button type="button" class="menu-close-btn" data-menu-close>
+                            <svg class="menu-close-btn__svg">
+                                <use href="./images/icons.svg#icon-menu-close" width="19" height="19"></use>
+                            </svg>
+                        </button>
+                        <ul class="list mob-menu-list">
+                            <li class="mob-menu-list__item">
+                                <a class="link mob-menu-list__link" href="./index.html">Студия</a>
+                            </li>
+                            <li class="mob-menu-list__item">
+                                <a class="link mob-menu-list__link mob-menu-list__link--current" href="./portfolio.html">Портфолио</a>
+                            </li>
+                            <li class="mob-menu-list__item">
+                                <a class="link mob-menu-list__link" href="">Контакты</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="mobile-bottom">
+                        <ul class="list mobile-contact">
+                            <li class="mobile-contact__item">
+                                <a class="link mobile-contact__phone" href="tel:+380961111111"> +380961111111 </a>
+                            </li>
+                            <li class="item mobile-contact__item">
+                                <a class="link mobile-contact__letter" href="mailto:info@devstudio.com">
+                                    info@devstudio.com</a>
+                            </li>
+                        </ul>
+                        <ul class="list mob-sotial-list">
+                            <li class="mob-sotial-list__item">
+                                <a class="link mob-sotial-list__link" href="">Instagram</a>
+                            </li>
+                            <li class="mob-sotial-list__item">
+                                <a class="link mob-sotial-list__link" href="">Twitter</a>
+                            </li>
+                            <li class="mob-sotial-list__item">
+                                <a class="link mob-sotial-list__link" href="">Facebook</a>
+                            </li>
+                            <li class="mob-sotial-list__item">
+                                <a class="link mob-sotial-list__link" href="">LinkedIn</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
         </div>
     </header>
 
