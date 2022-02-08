@@ -69,7 +69,7 @@
 	transition: transform var(--transition-duration) var(--transition-timing-function);
 }
 .overlay__text {
-	padding: 63px 24px;
+	padding: 77px 24px;
 	color: #ffffff;
 	font-family: $PrimaryFont;
 	font-style: normal;
@@ -77,6 +77,12 @@
 	font-size: 18px;
 	line-height: 1.56;
 	letter-spacing: 0.03em;
+	@media screen and (min-width: 768px) {
+		padding: 48px 24px;
+	}
+	@media screen and (min-width: 1200px) {
+		padding: 63px 24px;
+	}
 }
 .examples__container {
 	flex-grow: 1;
