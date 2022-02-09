@@ -72,19 +72,43 @@
 	transition: transform var(--transition-duration) var(--transition-timing-function);
 }
 .overlay__text {
-	padding: 77px 24px;
+	padding: 20px 24px;
 	color: #ffffff;
 	font-family: $PrimaryFont;
 	font-style: normal;
 	font-weight: 400;
-	font-size: 18px;
+	font-size: 14px;
 	line-height: 1.56;
 	letter-spacing: 0.03em;
+	@media screen and (min-width: 480px) {
+		padding: 77px 24px;
+		color: #ffffff;
+		font-family: $PrimaryFont;
+		font-style: normal;
+		font-weight: 400;
+		font-size: 18px;
+		line-height: 1.56;
+		letter-spacing: 0.03em;
+	}
 	@media screen and (min-width: 768px) {
 		padding: 48px 24px;
+		color: #ffffff;
+		font-family: $PrimaryFont;
+		font-style: normal;
+		font-weight: 400;
+		font-size: 18px;
+		line-height: 1.56;
+		letter-spacing: 0.03em;
 	}
 	@media screen and (min-width: 1200px) {
 		padding: 63px 24px;
+		color: #ffffff;
+		font-family: $PrimaryFont;
+		font-style: normal;
+		font-weight: 400;
+		font-size: 18px;
+		line-height: 1.56;
+		letter-spacing: 0.03em;
 	}
 }
 .examples__container {

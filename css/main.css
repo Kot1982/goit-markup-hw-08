@@ -1340,7 +1340,7 @@ body {
 
 @media screen and (min-width: 1200px) {
   .examples__item {
-    width: 270px;
+    width: 370px;
   }
 }
 
@@ -1356,25 +1356,52 @@ body {
 }
 
 .overlay__text {
-  padding: 77px 24px;
+  padding: 20px 24px;
   color: #ffffff;
   font-family: "Roboto", "sans-serif";
   font-style: normal;
   font-weight: 400;
-  font-size: 18px;
+  font-size: 14px;
   line-height: 1.56;
   letter-spacing: 0.03em;
+}
+
+@media screen and (min-width: 480px) {
+  .overlay__text {
+    padding: 77px 24px;
+    color: #ffffff;
+    font-family: "Roboto", "sans-serif";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.56;
+    letter-spacing: 0.03em;
+  }
 }
 
 @media screen and (min-width: 768px) {
   .overlay__text {
     padding: 48px 24px;
+    color: #ffffff;
+    font-family: "Roboto", "sans-serif";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.56;
+    letter-spacing: 0.03em;
   }
 }
 
 @media screen and (min-width: 1200px) {
   .overlay__text {
     padding: 63px 24px;
+    color: #ffffff;
+    font-family: "Roboto", "sans-serif";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.56;
+    letter-spacing: 0.03em;
   }
 }
 
